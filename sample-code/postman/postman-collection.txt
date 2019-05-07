@@ -1,0 +1,21 @@
+We’ve created a “collection” in Postman to make testing our APIs easy.
+
+NOTE: You must use this collection in the full Postman desktop app, NOT in the discontinued Postman chrome or browser app.
+
+Get the PencilDATA Postman collection settings here:
+
+https://www.getpostman.com/collections/c71a1ab5ad8ded08aa22
+
+You can download this and paste it in to the postman import screen as raw text, or “import from link” which is more convenient: 
+
+Once you’ve imported the collection to Postman, simply enter OAuth2.0 type in the “Authorization” section of the Authenticate request and generate a new access token either by signup or signin.
+
+ It will fetch your JWT token, and add that authorization data to Request Headers and Preview Request
+
+Next, go to Register. Click send. It will submit a hash and your JWT, and return an entity ID which is our unique ID for your registration. We set the hash and entity ID as postman variables.
+
+Next, go to Verify. Click send. It will submit the hash, your JWT, and the entity ID, and return true or false. If the hash matches the hash that was registered for that entity ID, it will return true. You can change the data to hash that it is submitting and it will return false.
+
+Any questions, please contact support@pencildata.com
+
+Troubleshooting: If you get any postman errors about variables being empty or an error when you get to the Register step (hover your mouse over things like {{accessToken}} or {{hash}}, you may need to add an environment to your Postman config so the variables have a place to get stored. Look towards the top right of your postman window for the environment name, visibility (eye icon) or settings (gear), and then Add a new environment to hold the variables.
