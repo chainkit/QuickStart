@@ -4,7 +4,7 @@ Please visit https://github.com/chainkit/ for the latest.
 
 If you need a username and password for testing, please email sales@pencildata.com
 
-Start by watching the 3 minute quickstart video in the START-HERE folder, or read the PDF in that same directory. https://github.com/chainkit/quickstart/blob/master/START-HERE/3-MINUTE-HOWTO-VIDEO-PencilDATA%20API%20Quickstart.mp4
+Start by reading the PDF Chainkit API Quickstart.pdf in that same directory. 
 
 Copyright 2019 PencilDATA, All Rights Reserved.
 
