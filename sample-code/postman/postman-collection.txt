@@ -10,7 +10,13 @@ You can download this and paste it in to the postman import screen as raw text, 
 
 Once you’ve imported the collection to Postman, simply enter OAuth2.0 type in the “Authorization” section of the Authenticate request and generate a new access token either by signup or signin.
 
- It will fetch your JWT token, and add that authorization data to Request Headers and Preview Request
+Token Name - access_token
+Grant Type - Implicit
+Callback URL - https://api.pencildata.com/users/codeGrant
+Auth URL - https://auth.pencildata.com/login
+Client ID - 583esffj813h4acfuqu4ifvuip
+
+It will fetch your JWT token, and add that authorization data to Request Headers and Preview Request
 
 Next, go to Register. Click send. It will submit a hash and your JWT, and return an entity ID which is our unique ID for your registration. We set the hash and entity ID as postman variables.
 
