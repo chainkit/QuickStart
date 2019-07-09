@@ -14,7 +14,7 @@ def PencilDATA_login(username,password):
     user's accessToken. If the authentication fails, an exception is raised 
     (actually a HTTPError: Bad Request)."""
 
-    url = 'https://api.pencildata.com/token'
+    url = 'https://api.chainkit.com/token'
     datajson = {'userId': username, 'password': password}
     head = {"Content-Type": "application/json"}
     res = requests.request("POST", url, data=json.dumps(datajson), headers=head)
@@ -47,7 +47,7 @@ def verify_file(login_data, asset_id, file, storage="none"):
     datajson["hash"] = file_hash(file)
     datajson["storage"] = storage
     # datajson = "{0}".format(datajson).encode("utf-8")
-    url = "https://api.pencildata.com/verify/"+asset_id
+    url = "https://api.chainkit.com/verify/"+asset_id
     head = {"Content-Type": "application/json","Authorization": "Bearer {0}".format(login_data['data']['accessToken'])} #Request HTTP headers
     res = requests.request("GET", url, params=datajson, headers=head)
     return res.json()

@@ -8,7 +8,7 @@ require 'uri'
 
 
 # Authentication
-# url      = "https://api.pencildata.com/token"
+# url      = "https://api.chainkit.com/token"
 puts "username: "
 username = gets.chomp
 puts "password: "
@@ -24,7 +24,7 @@ entity_id = gets.chomp
 params   = { 'userId': username, 'password': password }
 headers  = { 'Content-type': 'application/json' }
 
-uri = URI.parse("https://api.pencildata.com/token")
+uri = URI.parse("https://api.chainkit.com/token")
 https = Net::HTTP.new(uri.host, uri.port)
 https.use_ssl = true
 
@@ -38,7 +38,7 @@ file = File.new(filename, "r")
 hash_content = Digest::SHA256.hexdigest(file.read)
 
 # Verify
-url          = "https://api.pencildata.com/verify/#{entity_id}?hash=#{hash_content}&storage=#{storage}"
+url          = "https://api.chainkit.com/verify/#{entity_id}?hash=#{hash_content}&storage=#{storage}"
 headers      = { Authorization: "Bearer #{token}", content_type: 'application/json' }
 
 response = RestClient.get(url, headers)

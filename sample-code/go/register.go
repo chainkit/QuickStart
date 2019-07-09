@@ -15,9 +15,9 @@ import (
 )
 const (
     // TokensURL is the URL for getting an ID token
-    TokensURL = "https://api.pencildata.com/token"
+    TokensURL = "https://api.chainkit.com/token"
     // RegisterURL is the URL for a document registration
-    RegisterURL = "https://api.pencildata.com/register/"
+    RegisterURL = "https://api.chainkit.com/register/"
     // storage is none (default)
     Storage = "none"
 )
@@ -166,7 +166,7 @@ func main() {
         return
     }
     filename := os.Args[1]
-    
+
     // data is the file content, you can use it
     fmt.Println("File content is: ")
     fmt.Println(string(filename))

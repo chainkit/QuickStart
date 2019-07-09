@@ -24,7 +24,7 @@ def PencilDATA_login(username, password):
     user's IdToken. If the authentication fails, an exception is raised
     (actually a HTTPError: Bad Request)."""
 
-    url = 'https://api.pencildata.com/token'
+    url = 'https://api.chainkit.com/token'
     data = {'userId': username, 'password': password}
     head = {"Content-Type": "application/json"}
     res = requests.request("POST", url, data=json.dumps(data), headers=head)
@@ -46,7 +46,7 @@ def register_file(login_data,file,storage="none"):
     datajson = {}
     datajson["hash"] = file_hash(file)
     datajson["storage"] = storage
-    url = "https://api.pencildata.com/register/"
+    url = "https://api.chainkit.com/register/"
 
     head = {"Content-Type": "application/json","Authorization": "Bearer {0}".format(login_data['data']['accessToken'])}#Request HTTP headers
     res = requests.request("POST", url, data=json.dumps(datajson), headers=head)

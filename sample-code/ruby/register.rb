@@ -8,7 +8,7 @@ require 'net/http'
 require 'uri'
 
 # Authentication
-# url      = "https://api.pencildata.com/token"
+# url      = "https://api.chainkit.com/token"
 puts "username: "
 username = gets.chomp
 puts "password: "
@@ -21,7 +21,7 @@ filename = gets.chomp
 params   = { 'userId': username, 'password': password }
 headers  = { 'Content-type': 'application/json' }
 
-uri = URI.parse("https://api.pencildata.com/token")
+uri = URI.parse("https://api.chainkit.com/token")
 https = Net::HTTP.new(uri.host, uri.port)
 https.use_ssl = true
 
@@ -32,7 +32,7 @@ response = https.request(request)
 token = JSON.parse(response.body)['data']['accessToken']
 
 # Register
-url          = 'https://api.pencildata.com/register/'
+url          = 'https://api.chainkit.com/register/'
 file = File.new(filename, "r")
 hash_content = Digest::SHA256.hexdigest(file.read)
 description  = 'demo registration'

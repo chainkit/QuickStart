@@ -4,7 +4,7 @@ require 'base64'
 require 'digest'
 
 # Authentication
-url      = "https://api.pencildata.com/token"
+url      = "https://api.chainkit.com/token"
 username = 'XXX'
 password = Base64.encode64('XXX')
 
@@ -16,7 +16,7 @@ response = JSON.parse(json)
 token    = response['result']['accessToken']
 
 # Register
-url          = 'https://api.pencildata.com/register/'
+url          = 'https://api.chainkit.com/register/'
 hash_content = Digest::SHA256.hexdigest('message')
 description  = 'demo registration'
 storage      = 'private'
@@ -28,7 +28,7 @@ response  = RestClient.post(url, params, headers)
 entity_id = response
 
 # Verify
-url          = "https://api.pencildata.com/verify/#{entity_id}?hash=#{hash_content}&storage=#{storage}"
+url          = "https://api.chainkit.com/verify/#{entity_id}?hash=#{hash_content}&storage=#{storage}"
 headers      = { Authorization: "Bearer #{token}", content_type: 'application/json' }
 
 response = RestClient.get(url, headers)

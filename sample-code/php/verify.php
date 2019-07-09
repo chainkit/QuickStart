@@ -2,7 +2,7 @@
 function requestToken($username, $password){
 
 //Initiate cURL.
-$ch = curl_init('https://api.pencildata.com/token');
+$ch = curl_init('https://api.chainkit.com/token');
  
  // First we need to get the JSON web token (JWT) -- so let's authenticate to the token api with our username and password
 $jsonData = array(
@@ -58,7 +58,7 @@ global $token;
 $ch = curl_init();
  
 //Set the URL that you want to GET by using the CURLOPT_URL option.
-curl_setopt($ch, CURLOPT_URL, 'https://api.pencildata.com/verify/'.$entityID.'?storage='.$storage.'&hash='.$hash);
+curl_setopt($ch, CURLOPT_URL, 'https://api.chainkit.com/verify/'.$entityID.'?storage='.$storage.'&hash='.$hash);
 
 //Set headers with token
 $headers = [

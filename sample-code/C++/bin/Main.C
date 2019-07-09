@@ -42,7 +42,7 @@ std::string getAuthorizationToken(const std::string &username, const std::string
 {
   std::cout << "Attempting to authenticate user with credentials(" << username << "," << password << ")." << std::endl;
   HttpClient httpClient;
-  const char *url = "https://api.pencildata.com/token";
+  const char *url = "https://api.chainkit.com/token";
 
   std::string postFieldJsonString;
   std::map<std::string, std::string> headers, postFields;
@@ -105,7 +105,7 @@ std::string registerFile(const std::string &token, const std::string &hash)
 {
   std::cout << "Attempting to register hash: " << hash << " with token: " << token << std::endl;
   HttpClient httpClient;
-  const char *url = "https://api.pencildata.com/register";
+  const char *url = "https://api.chainkit.com/register";
   std::string postFieldJsonString;
   std::map<std::string, std::string> headers, postFields;
   nlohmann::json postFieldJson;
@@ -135,7 +135,7 @@ void verifyToken(const std::string &token, const std::string &hash, const std::s
 {
   std::cout << "Attempting to verify entityId: " << entityId << " with hash: " << hash << " with token: " << token << std::endl;
   HttpClient httpClient;
-  std::string url = "https://api.pencildata.com/verify/" + entityId + "?hash=" + hash + "&storage=private";
+  std::string url = "https://api.chainkit.com/verify/" + entityId + "?hash=" + hash + "&storage=private";
   std::cout << url << std::endl;
   
   std::map<std::string, std::string> headers;

@@ -16,9 +16,9 @@ import (
 )
 const (
     // TokensURL is the URL for getting an ID token
-    TokensURL = "https://api.pencildata.com/token"
+    TokensURL = "https://api.chainkit.com/token"
     // VerifyURL is the URL for a document verification
-    VerifyURL = "https://api.pencildata.com/verify/"
+    VerifyURL = "https://api.chainkit.com/verify/"
 )
 // UserInfo represents a struct for a user info needed for auth
 type UserInfo struct {

@@ -2,7 +2,7 @@
 function requestToken($username, $password){
 
 //Initiate cURL.
-$ch = curl_init('https://api.pencildata.com/token');
+$ch = curl_init('https://api.chainkit.com/token');
  
  // First we need to get the JSON web token (JWT) -- so let's authenticate to the token api with our username and password
 $jsonData = array(
@@ -58,7 +58,7 @@ global $token;
 $result = array();
 //Set other parameters as keys in the $postdata array
 $postdata =  array('hash' => $hash , 'description' => "demo registration", 'storage' => $storage);
-$url = "https://api.pencildata.com/register/";
+$url = "https://api.chainkit.com/register/";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$url);

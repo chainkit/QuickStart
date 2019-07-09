@@ -1,13 +1,27 @@
+# ChainKit QuickStart
+
 This code has been created and submitted by Chainkit users to help others get started.
 
-Please visit https://github.com/chainkit/ for the latest.
+Please visit https://github.com/chainkit/ for the latest and greatest quickstart.
 
-If you need a username and password for testing, please email sales@pencildata.com
+## Getting Credentials
 
-Start by reading the PDF Chainkit API Quickstart.pdf in that same directory. 
+If you need a username and password for testing it out, visit
+https://chainkit.com/get-api-key 
 
-Copyright 2019 PencilDATA, All Rights Reserved.
+You can also email us at: support@pencildata.com for more information
+on our products.
 
-DISCLAIMER:
+## Getting Started with the API
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Start by reading the PDF Documentation[./Chainkit API Quickstart.pdf] in this directory.
+
+## Copyright and Feedback
+
+Copyright (c) 2019-Present PencilDATA Inc. <https://chainkit.com/pencildata>
+
+DISCLAIMER: Please see accompanying [LICENSE](./LICENSE)
+
+Send us your feedback and inquiries to info@chainkit.com
+
+Pull requests welcome.
