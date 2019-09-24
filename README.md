@@ -7,7 +7,7 @@ Please visit https://github.com/chainkit/ for the latest and greatest quickstart
 ## Getting Credentials
 
 If you need a username and password for testing it out, visit
-https://chainkit.com/get-api-key 
+https://chainkit.com/start 
 
 You can also email us at: support@pencildata.com for more information
 on our products.
