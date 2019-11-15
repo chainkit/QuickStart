@@ -1,4 +1,4 @@
-# ChainKit QuickStart
+# Chainkit QuickStart
 
 This code has been created and submitted by Chainkit users to help others get started.
 
@@ -7,14 +7,14 @@ Please visit https://github.com/chainkit/ for the latest and greatest quickstart
 ## Getting Credentials
 
 If you need a username and password for testing it out, visit
-https://chainkit.com/get-api-key 
+https://chainkit.com/start 
 
 You can also email us at: support@pencildata.com for more information
 on our products.
 
 ## Getting Started with the API
 
-Start by reading the PDF Documentation[./Chainkit API Quickstart.pdf] in this directory.
+Start by reading the PDF Documentation[./Chainkit_API_Quickstart.md] in this directory.
 
 ## Copyright and Feedback
 
