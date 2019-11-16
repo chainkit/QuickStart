@@ -66,7 +66,7 @@ If successful, the API will returns an **assetId** unique to that registration a
 
 Chainkit allows storage on private and public blockchains. For example, you could choose to store your hash on the public Ethereum blockchain, or a private blockchain including Hyperledger Sawtooth or VMware Blockchain. Private is faster and recommended for testing.
 
-In this example we are storing the *hash value* on Chainkit's Hyperledger Sawtooth blockchain. Please contact us at <support@pencildata.com> if you would want to upgrade your account permissions to use other blockchains. 
+In this example we are storing the *hash value* on Chainkit's Hyperledger Sawtooth blockchain. Please contact us at <support@chainkit.com> if you would want to upgrade your account permissions to use other blockchains. 
 
 
 **Example Request:**
@@ -128,4 +128,4 @@ Note: You can test this verification by altering the original file, hashing the 
 
 
 # Need help?
-Contact us at mailto:<support@pencildata.com>
+Contact us at mailto:<support@chainkit.com>
