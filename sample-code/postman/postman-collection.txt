@@ -22,6 +22,6 @@ Next, go to Register. Click send. It will submit a hash and your JWT, and return
 
 Next, go to Verify. Click send. It will submit the hash, your JWT, and the entity ID, and return true or false. If the hash matches the hash that was registered for that entity ID, it will return true. You can change the data to hash that it is submitting and it will return false.
 
-Any questions, please contact support@pencildata.com
+Any questions, please contact info@chainkit.com
 
 Troubleshooting: If you get any postman errors about variables being empty or an error when you get to the Register step (hover your mouse over things like {{accessToken}} or {{hash}}, you may need to add an environment to your Postman config so the variables have a place to get stored. Look towards the top right of your postman window for the environment name, visibility (eye icon) or settings (gear), and then Add a new environment to hold the variables.

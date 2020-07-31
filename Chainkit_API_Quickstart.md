@@ -72,7 +72,8 @@ public Ethereum blockchain, or a private blockchain including Hyperledger Sawtoo
 Private is faster and recommended for testing.
 
 In this example we are storing the *hash value* on Chainkit's Hyperledger Sawtooth blockchain. Please contact us
-at <support@chainkit.com> if you would want to upgrade your account permissions to use other blockchains. 
+if you would want to upgrade your account permissions to use other blockchains (Contact Information is at the end
+of this document.)
 
 **Example Request:**
 
@@ -135,4 +136,5 @@ submitting that to the verify API with the original **assetId**. It will return 
 of the altered file does not match what was originally registered with us.
 
 # Need help?
+
 Contact us at [info@chainkit.com](mailto:info@chainkit.com)

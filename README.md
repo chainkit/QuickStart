@@ -25,10 +25,14 @@ Assuming a pre-built ELK environment, get started by downloading the gem file an
 To get started in Splunk, please download the Chainkit Add-On from Splunkbase, available in Splunk>Enterprise or Splunkbase https://splunkbase.splunk.com/app/5068/
  
 ## Copyright and Feedback
+
 Copyright (c) 2019-Present PencilDATA Inc. https://chainkit.com/pencildata
-DISCLAIMER: Please see accompanying LICENSE
-Send us your feedback and inquiries to support@chainkit.com
-Pull requests welcome.
 
+## Disclaimer
 
+Please see accompanying *LICENSE*. Please send us your feedback and inquiries
+to [info@chainkit.com](mailto:info@chainkit.com)
 
+## Pull Requests and Feedback
+
+Feedback and Pull requests Welcome.
